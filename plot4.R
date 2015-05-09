@@ -14,6 +14,7 @@ data$UniTime <- as.POSIXct(temp)
 
 #Plot
 par(mfrow=c(2,2))
+par(mar=c(4,4,2,4))
 with(data, {
     plot(UniTime,Global_active_power, type="l", 
          ylab="Global Active Power", xlab="")
